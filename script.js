@@ -9,7 +9,7 @@ $(document).ready(function(){
         }
     });
     $('.form-submit').click(function(){
-        window.open('home.html');
+        window.location.href = 'https://buibao3103.github.io/KT_SOCIAL/home.html';
     });
 });
 
