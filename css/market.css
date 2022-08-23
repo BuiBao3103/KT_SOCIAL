@@ -1,4 +1,4 @@
-#header .menu li:nth-child(3) a{
+#header .menu.pc li:nth-child(3) a{
     background-color: #9E663B;
 }
 
@@ -149,6 +149,7 @@
 #list-products .image {
     width: 75%;
     margin: 20px auto; 
+    display: block;
 }
 #list-products .item img {
     display: block;
@@ -228,7 +229,7 @@
     #list-products .item
     { 
         width: 45%;
-        height: 300px;
+        height: 350px;
     }
     
     .nav_overlay{
@@ -252,13 +253,14 @@
     }
     #market .btn-market{
         position: fixed;
-        display: flex;
-        top: 78px;
+        display: block;
+        top: 90px;
         width: 28px;
         height: 28px;
         line-height: 28px;
         color:black;
         background-color: #BAA89B;
+        z-index: 100;
     }
     #menu-option.mobile{
         display: block;
@@ -270,6 +272,7 @@
         overflow-y: scroll;
         top: 85px;
         bottom: 40px;
+        z-index: 100;
 
     } 
     #menu-option.mobile .icon-close{
@@ -283,5 +286,20 @@
     .nav_input:checked ~ #menu-option.mobile {
         transform: translate(0%);
         opacity: 1;
+    }
+    .nav_bars-btn > i{
+        line-height: 28px;
+        position: relative;
+        display: block;
+        text-align: center; 
+    }
+    .nav_bars-btn > i::after {
+        content: " ";
+        border-width: 35px;
+        border-style: solid;
+        border-color: transparent transparent transparent #BAA89B;
+        position: absolute;
+        left: 100%;
+        border-width: 14px;
     }
 }

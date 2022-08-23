@@ -18,25 +18,23 @@
         <!-- header -->
         <header id="header">
             <div class="logo-page-container">
-                <div class="flex">
-                    <div class="flex logos">
-                        <img src="image/story/logo2.jpg" rel="avt"/>
-                        <a href=""class="logo animate__animated animate__bounce animate__infinite">KT_Social</a>
-                        <input type="text" name=""id=""placeholder="Search"/>
-                        <a href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
-                    </div>
+                <div class="flex logos">
+                    <img src="image/story/logo2.jpg" rel="avt"/>
+                    <a href=""class="logo animate__animated animate__bounce animate__infinite">KT_Social</a>
                 </div>
-                <div></div>
-            
+                <div class="flex">
+                    <input type="text" name=""id=""placeholder="Search"/>
+                    <a href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
+                </div>
                 <nav>
                     <ul class="menu flex pc">
-                        <li class="tab-item active-tintuc" onclick="changeNewslist('home',this)">
+                        <li class="tab-item">
                             <a href="home.html"> <i class="fa-solid fa-house-user"></i></a>
                         </li>
-                        <li class="tab-item" onclick="changeNewslist('messenge',this);giaodien('nen1',this)">
+                        <li class="tab-item">
                             <a href="messenge.html"><i class="fa-brands fa-facebook-messenger"></i></a>
                         </li>
-                        <li class="tab-item"onclick="changeNewslist('market',this)">
+                        <li class="tab-item">
                             <a href="market.html"><i class="fa-solid fa-calendar-week"></i></a>
                         </li>
                         <li>
@@ -394,22 +392,24 @@
                 </div>
 
                 <section class="profiles flex">
-                    <div class="flex">
-                            <div class="image">
-                                <img src="image/story/avt1.jpg"/>
-                            </div>
-                            <div></div>
-                            <div class="name">
-                                <p>_Khả Tú_28032003</p>
-                            </div>
-                        <div class="noidung">
-                            <p >started following you</p>
-                            <p class="thoigian">-6w-</p>
+    
+                        <div class="image">
+                            <img src="image/story/avt1.jpg"/>
                         </div>
-                    </div>
-                    <div class="follow">
-                        <input type="button" value="Follow"/>
-                    </div>
+                        <div class="name">
+                            <p>_Khả Tú_280</p>
+                        </div>
+                        
+                        <div class="noidung-follow">   
+                            <div class="noidung">
+                                <p >started following you</p>
+                                <p class="thoigian">-6w-</p>
+                            </div>
+                    
+                            <div class="follow">
+                                <input type="button" value="Follow"/>
+                            </div>
+                        </div>
                 </section>
 
                 <section class="profiles flex">
@@ -419,7 +419,7 @@
                         </div>
                         <div></div>
                         <div class="name">
-                            <p>_Bảo Bùi_31032003</p>
+                            <p>_Bảo Bùi_310</p>
                         </div>
                         <div class="noidung">
                             <p >who you might now</p>
@@ -475,7 +475,7 @@
                         </div>
                         <div></div>
                         <div class="name">
-                            <p>_Khả Tú_28032003</p>
+                            <p>_Khả Tú_280</p>
                         </div>
                         <div class="noidung">
                             <p >started following you</p>
@@ -492,20 +492,7 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script>
-            $(document).ready (function(){
-                $(window).scroll(function(){
-                    if($(this).scrollTop())
-                    {
-                        $('header').addClass('sticky');
-                    }
-                    else
-                    {
-                        $('header').remove('sticky');
-                    }
-                });
-            });
-        </script>
+        
         <script src="script.js"></script>
         
     </body>

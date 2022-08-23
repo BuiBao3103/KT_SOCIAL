@@ -18,25 +18,23 @@
         <!-- header -->
         <header id="header">
             <div class="logo-page-container">
-                <div class="flex">
-                    <div class="flex logos">
-                        <img src="image/story/logo2.jpg" rel="avt"/>
-                        <a href=""class="logo animate__animated animate__bounce animate__infinite">KT_Social</a>
-                        <input type="text" name=""id=""placeholder="Search"/>
-                        <a href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
-                    </div>
+                <div class="flex logos">
+                    <img src="image/story/logo2.jpg" rel="avt"/>
+                    <a href=""class="logo animate__animated animate__bounce animate__infinite">KT_Social</a>
                 </div>
-                <div></div>
-            
+                <div class="flex">
+                    <input type="text" name=""id=""placeholder="Search"/>
+                    <a href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
+                </div>
                 <nav>
                     <ul class="menu flex pc">
-                        <li class="tab-item active-tintuc" onclick="changeNewslist('home',this)">
+                        <li class="tab-item">
                             <a href="home.html"> <i class="fa-solid fa-house-user"></i></a>
                         </li>
-                        <li class="tab-item" onclick="changeNewslist('messenge',this);giaodien('nen1',this)">
+                        <li class="tab-item">
                             <a href="messenge.html"><i class="fa-brands fa-facebook-messenger"></i></a>
                         </li>
-                        <li class="tab-item"onclick="changeNewslist('market',this)">
+                        <li class="tab-item">
                             <a href="market.html"><i class="fa-solid fa-calendar-week"></i></a>
                         </li>
                         <li>
@@ -337,29 +335,29 @@
                     </div>
                     <ul>
                         <li>
-                            <input type="checkbox" id="dm1" name="danhmuc" value="on">
-                            <label for="dm1">Phụ kiện nữ (1.7k)</label>
+                            <input type="checkbox" id="pcdm1" name="danhmuc" value="on">
+                            <label for="pcdm1">Phụ kiện nữ (1.7k)</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="dm2" name="danhmuc" value="on">
-                            <label for="dm2">Loa (1.6k+)</label>
+                            <input type="checkbox" id="pcdm2" name="danhmuc" value="on">
+                            <label for="pcdm2">Loa (1.6k+)</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="dm3" name="danhmuc" value="on">
-                            <label for="dm3">Máy tính (1.8k+)</label>
+                            <input type="checkbox" id="pcdm3" name="danhmuc" value="on">
+                            <label for="pcdm3">Máy tính (1.8k+)</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="dm4" name="danhmuc" value="on">
-                            <label for="dm4">Sức khỏe (2k+)</label>
+                            <input type="checkbox" id="pcdm4" name="danhmuc" value="on">
+                            <label for="pcdm4">Sức khỏe (2k+)</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="dm5" name="danhmuc" value="on">
-                            <label for="dm5">Khác (10k+)</label>
+                            <input type="checkbox" id="pcdm5" name="danhmuc" value="on">
+                            <label for="pcdm5">Khác (10k+)</label>
                         </li>
                     </ul>
                     <div class="timkiem">
-                        <label for="dmkhac">Khác:</label>
-                        <input type="text" id="dmkhac" placeholder="Danh mục cần tìm">
+                        <label for="pcdmkhac">Khác:</label>
+                        <input type="text" id="pcdmkhac" placeholder="Danh mục cần tìm" value="">
                         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                 </div>
@@ -370,33 +368,33 @@
                     </div>
                     <ul>
                         <li>
-                            <input type="checkbox" id="nb1" name="noiban" value="on">
-                            <label for="nb1">TPHCM</label>
+                            <input type="checkbox" id="pcnb1" name="noiban" value="on">
+                            <label for="pcnb1">TPHCM</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="nb2" name="noiban" value="on">
-                            <label for="nb2">Đà Nẵng</label>
+                            <input type="checkbox" id="pcnb2" name="noiban" value="on">
+                            <label for="pcnb2">Đà Nẵng</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="nb3" name="noiban" value="on">
-                            <label for="nb3">Thái Bình</label>
+                            <input type="checkbox" id="pcnb3" name="noiban" value="on">
+                            <label for="pcnb3">Thái Bình</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="nb4" name="noiban" value="on">
-                            <label for="nb4">Quảng Ninh</label>
+                            <input type="checkbox" id="pcnb4" name="noiban" value="on">
+                            <label for="pcnb4">Quảng Ninh</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="nb5" name="noiban" value="on">
-                            <label for="nb5">Nam Định</label>
+                            <input type="checkbox" id="pcnb5" name="noiban" value="on">
+                            <label for="pcnb5">Nam Định</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="nb6" name="noiban" value="on">
-                            <label for="nb6">Nước ngoài</label>
+                            <input type="checkbox" id="pcnb6" name="noiban" value="on">
+                            <label for="pcnb6">Nước ngoài</label>
                         </li>
                     </ul>
                     <div class="timkiem">
-                        <label for="nbkhac">Khác:</label>
-                        <input type="text" id="nbkhac" placeholder="khu vực cần tìm">
+                        <label for="pcnbkhac">Khác:</label>
+                        <input type="text" id="pcnbkhac" placeholder="khu vực cần tìm" value="">
                         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                     
@@ -408,16 +406,16 @@
                     </div>
                     <ul>
                         <li>
-                            <input type="checkbox" id="vc1" name="vanchuyen" value="on">
-                            <label for="vc1">Nhanh</label>
+                            <input type="checkbox" id="pcvc1" name="vanchuyen" value="on">
+                            <label for="pcvc1">Nhanh</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="vc2" name="vanchuyen" value="on">
-                            <label for="vc2">Hỏa Tốc</label>
+                            <input type="checkbox" id="pcvc2" name="vanchuyen" value="on">
+                            <label for="pcvc2">Hỏa Tốc</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="vc3" name="vanchuyen" value="on">
-                            <label for="vc3">Tiết kiệm</label>
+                            <input type="checkbox" id="pcvc3" name="vanchuyen" value="on">
+                            <label for="pcvc3">Tiết kiệm</label>
                         </li>
                     </ul>
                 </div>
@@ -427,9 +425,9 @@
                         <span>Khoảng Giá</span>
                     </div>
                     <div class="tu-den">
-                        <input type="text" placeholder="₫ Từ">
+                        <input type="text" placeholder="₫ Từ" value="">
                         <i class="fa-solid fa-circle-arrow-right"></i>
-                        <input type="text" placeholder="₫ Đến">
+                        <input type="text" placeholder="₫ Đến" value="">
                     </div>
 
                     <button>Áp dụng</button>
@@ -441,12 +439,12 @@
                     </div>
                     <ul>
                         <li>
-                            <input type="checkbox" id="tt1" name="tinhtrang" value="on">
-                            <label for="tt1">Đã sử dụng</label>
+                            <input type="checkbox" id="pctt1" name="tinhtrang" value="on">
+                            <label for="pctt1">Đã sử dụng</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="tt2" name="tinhtrang" value="on">
-                            <label for="tt2">Mới</label>
+                            <input type="checkbox" id="pctt2" name="tinhtrang" value="on">
+                            <label for="pctt2">Mới</label>
                         </li>
                     </ul>
                 </div>
@@ -514,24 +512,24 @@
                     </div>
                     <ul>
                         <li>
-                            <input type="checkbox" id="dvkm1" name="dichvuvakhuyenmai" value="on">
-                            <label for="dvkm1">Freeship</label>
+                            <input type="checkbox" id="pcdvkm1" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm1">Freeship</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="dvkm2" name="dichvuvakhuyenmai" value="on">
-                            <label for="dvkm2">Đang giảm giá</label>
+                            <input type="checkbox" id="pcdvkm2" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm2">Đang giảm giá</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="dvkm3" name="dichvuvakhuyenmai" value="on">
-                            <label for="dvkm3">Gì cũng rẻ</label>
+                            <input type="checkbox" id="pcdvkm3" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm3">Gì cũng rẻ</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="dvkm4" name="dichvuvakhuyenmai" value="on">
-                            <label for="dvkm4">Hàng có sẵn</label>
+                            <input type="checkbox" id="pcdvkm4" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm4">Hàng có sẵn</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="dvkm5" name="dichvuvakhuyenmai" value="on">
-                            <label for="dvkm5">Mua giá bán buôn/ bán sỉ</label>
+                            <input type="checkbox" id="pcdvkm5" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm5">Mua giá bán buôn/ bán sỉ</label>
                         </li>
                     </ul>
                 </div>
@@ -549,26 +547,38 @@
                 <div id="luachon1" class="animation">
                     <ul id="list-products">
                         <div class="item">
-                            <div class="image">
-                                <img src="image/product.jpg" alt="">
+                            <div class="image c4-izmir c4-border-vert c4-gradient-top c4-image-zoom-in"style="--primary-color: #4D516C; --secondary-color: #73799F;">
+                                <img  src="image/product.jpg" alt="Sample Image" />
+                                <figcaption class="c4-layout-center-center">
+                                   <p>BEST-SALE</p> 
+                                </figcaption>
+                               
                             </div>
+                            
+                            
+
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-
                             </div>
-        
                             <div class="name">Túi sách</div>
                             <div class="desc">Xuất sứ: Italy</div>
                             <div class="price">500.000 VNĐ</div>
+                        
+
+                        
+
                         </div>
 
                         <div class="item">
-                            <div class="image">
+                            <div class="image c4-izmir c4-border-left c4-gradient-top-right c4-image-pan-right" style="--primary-color: #4ca2cd; --secondary-color: #65af6f;">
                                 <img src="image/product.jpg" alt="">
+                                <figcaption class="c4-layout-top-left">
+                                    <p>HOT TREND</p>
+                                </figcaption>
                             </div>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
@@ -585,8 +595,11 @@
                         </div>
                         
                         <div class="item">
-                            <div class="image">
+                            <div class="image c4-izmir c4-border-corners-1 c4-image-zoom-out c4-gradient-bottom"    style="--primary-color: #E0EAFC; --secondary-color: #CFDEF3; --text-color: #1f467b; --border-color: #1f467b; --image-opacity: .1;">
                                 <img src="image/product.jpg" alt="">
+                                <figcaption class="c4-layout-top-left">
+                                    <p>BEST-SALE</p>
+                                </figcaption>
                             </div>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
@@ -922,7 +935,7 @@
                             </div>
                             <div></div>
                             <div class="name">
-                                <p>_Khả Tú_28032003</p>
+                                <p>_Khả Tú_280</p>
                             </div>
                         <div class="noidung">
                             <p >started following you</p>
@@ -941,7 +954,7 @@
                         </div>
                         <div></div>
                         <div class="name">
-                            <p>_Bảo Bùi_31032003</p>
+                            <p>_Bảo Bùi_310</p>
                         </div>
                         <div class="noidung">
                             <p >who you might now</p>
@@ -997,7 +1010,7 @@
                         </div>
                         <div></div>
                         <div class="name">
-                            <p>_Khả Tú_28032003</p>
+                            <p>_Khả Tú_280</p>
                         </div>
                         <div class="noidung">
                             <p >started following you</p>
@@ -1014,20 +1027,7 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script>
-            $(document).ready (function(){
-                $(window).scroll(function(){
-                    if($(this).scrollTop())
-                    {
-                        $('header').addClass('sticky');
-                    }
-                    else
-                    {
-                        $('header').remove('sticky');
-                    }
-                });
-            });
-        </script>
+        
         <script src="script.js"></script>
         
     </body>

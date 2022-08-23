@@ -3,7 +3,7 @@
     <head>
         <meta charset=" utf-8"/>
         <title>Social Networking</title>
-        <link rel="stylesheet" type="text/css" href ="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href ="css/home.css"/>
         <link rel="stylesheet" type="text/css" href ="css/header_slider.css"/>
         <link rel="stylesheet" type="text/css" href ="css/nofication.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,25 +17,25 @@
         <!-- header -->
         <header id="header">
             <div class="logo-page-container">
-                <div class="flex">
-                    <div class="flex logos">
-                        <img src="image/story/logo2.jpg" rel="avt"/>
-                        <a href=""class="logo animate__animated animate__bounce animate__infinite">KT_Social</a>
-                        <input type="text" name=""id=""placeholder="Search"/>
-                        <a href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
-                    </div>
+                <div class="flex logos">
+                    <img src="image/story/logo2.jpg" rel="avt"/>
+                    <a href=""class="logo animate__animated animate__bounce animate__infinite">KT_Social</a>
                 </div>
-                <div></div>
-            
+
+                <div class="flex">
+                    <input type="text" name=""id=""placeholder="Search"/>
+                    <a href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
+                </div>
+
                 <nav>
                     <ul class="menu flex pc">
-                        <li class="tab-item active-tintuc" onclick="changeNewslist('home',this)">
+                        <li class="tab-item">
                             <a href="home.html"> <i class="fa-solid fa-house-user"></i></a>
                         </li>
-                        <li class="tab-item" onclick="changeNewslist('messenge',this);giaodien('nen1',this)">
+                        <li class="tab-item">
                             <a href="messenge.html"><i class="fa-brands fa-facebook-messenger"></i></a>
                         </li>
-                        <li class="tab-item"onclick="changeNewslist('market',this)">
+                        <li class="tab-item">
                             <a href="market.html"><i class="fa-solid fa-calendar-week"></i></a>
                         </li>
                         <li>
@@ -43,6 +43,7 @@
                         </li>
                     </ul>
                 </nav>
+                
                 <nav>
                     <ul class="menu flex mobile-tablet">
                         <li>
@@ -86,8 +87,8 @@
                     <div class="text">Caption Five</div>
                 </div>
                 <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1, 'left')">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'right')">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
             <!-- The dots/circles -->
@@ -177,8 +178,8 @@
                             <p>Linh Trần</p>
                         </div>
                     </div>
-                    <a class="prev" onclick="plusStories(-1, 'left')">&#10094;</a>
-                    <a class="next" onclick="plusStories(1, 'right')">&#10095;</a>
+                    <a class="prev" onclick="showStory('left')">&#10094;</a>
+                    <a class="next" onclick="showStory('right')">&#10095;</a>
                 </section>
                 
                 <div class="stts">
@@ -405,7 +406,7 @@
                                 
                                 <div class="name flex">
                                     <p>Như Lê</p>
-                                    <p class="soluongfollow">_LeNhu1422003_</p>
+                                    <p class="soluongfollow">_LeNhu142_</p>
                                 </div>
                             </div>
                             <div class="follow flex">
@@ -490,7 +491,6 @@
                         <i class="fa-solid fa-bell icon-nofi"></i>
                         <h1>NOFICATION</h1>
                     </div>
-                    <div></div>
                     <i class="fa-solid fa-xmark close" onclick="hideNofi()"></i>
                 </div>
                 <div class="flex buttons" >
@@ -503,9 +503,9 @@
                             <div class="image">
                                 <img src="image/story/avt1.jpg"/>
                             </div>
-                            <div></div>
+                            
                             <div class="name">
-                                <p>_Khả Tú_28032003</p>
+                                <p>_Khả Tú_280</p>
                             </div>
                         <div class="noidung">
                             <p >started following you</p>
@@ -522,9 +522,9 @@
                         <div class="image">
                             <img src="image/story/avt2.jpg"/>
                         </div>
-                        <div></div>
+                        
                         <div class="name">
-                            <p>_Bảo Bùi_31032003</p>
+                            <p>_Bảo Bùi_310</p>
                         </div>
                         <div class="noidung">
                             <p >who you might now</p>
@@ -559,7 +559,7 @@
                         <div class="image">
                             <img src="image/story/avt4.jpg"/>
                         </div>
-                        <div></div>
+                        
                         <div class="name">
                             <p>_Thành Nguyễn_123</p>
                         </div>
@@ -578,9 +578,9 @@
                         <div class="image">
                             <img src="image/story/avt1.jpg"/>
                         </div>
-                        <div></div>
+                        
                         <div class="name">
-                            <p>_Khả Tú_28032003</p>
+                            <p>_Khả Tú_280</p>
                         </div>
                         <div class="noidung">
                             <p >started following you</p>
@@ -597,20 +597,7 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script>
-            $(document).ready (function(){
-                $(window).scroll(function(){
-                    if($(this).scrollTop())
-                    {
-                        $('header').addClass('sticky');
-                    }
-                    else
-                    {
-                        $('header').remove('sticky');
-                    }
-                });
-            });
-        </script>
+        
         <script src="script.js"></script>
         
     </body>

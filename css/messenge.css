@@ -1,4 +1,4 @@
-#header .menu li:nth-child(2) a{
+#header .menu.pc li:nth-child(2) a{
     background-color: #9E663B;
 }
 #messenge{
@@ -73,7 +73,8 @@
     margin: 0px 3px;
     font-size: 50px;
     align-items: center;
-    display: flex;
+    
+    display: none;
     
 }
 #messenge .icon i{
@@ -98,6 +99,7 @@
     background-color: #FFC4C4;
 
 }
+
 .khungtinnhan{
     color: #000;
     width: 60%;
@@ -117,7 +119,7 @@
 .khungtinnhan .text-box{
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 95%;
     margin: 10px 10px;
 }
 .khungtinnhan .text-box input{
@@ -127,24 +129,22 @@
     margin: 5px;
 }
 
+
 @media screen and (max-width: 1024px){
     #slider {
         display: none;
     }
     #messenge{
-        position: fixed;
-        top: 70px;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        margin: 0;
+        margin-top: 75px;
         height: auto;
-        margin: 20px 0;
     }
     #messenge .mess_er{
         width: 100%;
     }
     #messenge .infos{
-        height: 600px;
+        overflow-y: visible;
+        height: auto;
     }
     #messenge .box_chat{
         display: none;
@@ -152,5 +152,15 @@
     #messenge .khungtinnhan{
         border-left: 1px solid black;
         width: 100%;
+    }
+    #messenge .back{
+        display: flex;
+    }
+    #messenge .khungtinnhan .text-box{
+        position: fixed;
+        bottom: 40px;
+    }
+    #messenge .khungtinnhan .text-box input{
+        width: 75%;
     }
 }
